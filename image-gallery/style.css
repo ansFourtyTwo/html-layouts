@@ -5,11 +5,13 @@
 .image-gallery {
     margin: auto;
     width: 45%;
+    max-width: 750px;
     display: grid;
     grid-template-columns: repeat(3, auto);
 }
 
 .image-gallery > .image {
+    justify-items: stretch;
     height: 250px;
     width: 250px;
 }
