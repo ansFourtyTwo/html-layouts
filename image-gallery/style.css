@@ -3,11 +3,11 @@
     margin: 0;
 }
 .image-gallery {
-    margin: auto;
+    margin: 100px 100%;
     width: 45%;
     max-width: 750px;
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .image-gallery > .image {
@@ -23,6 +23,17 @@
     margin: 75px 75px;
     z-index: 1;
     border: 1px solid #ff0000;
+}
+
+@media screen and (max-width: 860px) {
+    .image-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 620px) {
+    .image-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 .image-gallery > .image > img {
