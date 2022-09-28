@@ -2,6 +2,11 @@
     --sidebar-width: 150px
 }
 
+section {
+    min-height: 60vh;
+    border: 1px solid #000000;
+}
+
 .sidebar {
     width: var(--sidebar-width);
     background-color: #f1f1f1;
@@ -42,3 +47,4 @@ div.content {
         margin-left: 0px;
     }
 }
+
