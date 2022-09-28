@@ -30,8 +30,8 @@
     aspect-ratio: 1 / 1;
     object-fit: cover; 
 
-    transition: scale 200ms, opacity 200ms linear;
-    transition-delay: 10ms;
+    transition: scale 800ms ease, opacity 200ms linear;
+    transition-delay: 250ms;
 }
 
 .image-gallery:has(div.hover-box:hover) div:not(:hover) > img {
