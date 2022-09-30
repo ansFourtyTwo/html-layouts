@@ -1,0 +1,21 @@
+html {
+    scroll-behavior: smooth;
+}
+
+div.content {
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+section {
+    min-height: 60vh;
+    border: 1px solid #000000;
+    padding: 30px
+}
+
+section > p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify; /* Blocksatz */
+}
