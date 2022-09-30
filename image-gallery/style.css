@@ -3,7 +3,6 @@
     margin: 0;
 }
 .image-gallery {
-    margin: 100px 100%;
     width: 45%;
     max-width: 750px;
     display: grid;
@@ -39,7 +38,7 @@
 .image-gallery > .image > img {
     width: 100%;
     aspect-ratio: 1 / 1;
-    object-fit: cover; 
+    object-fit: cover;
 
     transition: scale 800ms ease, opacity 200ms linear;
     transition-delay: 250ms;
