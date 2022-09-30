@@ -19,3 +19,27 @@ section > p {
     line-height: 32px;
     text-align: justify; /* Blocksatz */
 }
+
+nav.navbar {
+    display: flex;
+    background-color: #3e3e3e;
+    padding: 2px 0;
+}
+
+nav.navbar > .navitem {
+    margin: 2px;
+    padding: 10px;
+    background-color: #e4e4e4;
+    border-radius: 8px;
+}
+
+nav.navbar > .navitem:hover {
+    background-color: #7fffd4;
+}
+
+nav.navbar > .navitem > a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
