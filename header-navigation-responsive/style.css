@@ -1,5 +1,5 @@
 :root {
-    --navbar-height: 100px;
+    --navbar-height: 50px;
 }
 * {
     scroll-behavior: smooth;
@@ -32,13 +32,13 @@ nav.navbar {
     position: fixed;
     top: 0;
     width: 100%;
+    height: var(--navbar-height);
     display: flex;
     background-color: #3e3e3e;
-    padding: 2px 0;
 }
 
 nav.navbar > .navitem {
-    margin: 2px;
+    margin: 5px;
     padding: 10px;
     border-radius: 8px;
     color:#000000;
@@ -52,7 +52,7 @@ nav.navbar > .navitem:hover {
 
 nav.navbar > .navitem > a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.25em;
+    font-size: 1.2em;
     color: inherit;
     text-decoration: none;
     text-transform: uppercase;
@@ -62,11 +62,25 @@ nav.navbar > .navitem > a:hover {
     color: inherit;
 }
 
-nav.navbar .menu {
+nav.navbar .menu {    
+    margin: 5px;
     margin-left: auto;
-    /* display: none; */
+    padding: 10px;
+    border-radius: 8px;
+    color:#000000;
+    background-color: #e4e4e4;
+    visibility: hidden;
 }
 
 nav.navbar .menu > i {
     vertical-align: middle;
 }
+
+@media screen and (max-width: 600px) {
+    nav.navbar > .navitem {
+        display: none;
+    }
+    nav.navbar > .menu {
+        visibility: visible;
+    }
+  }
