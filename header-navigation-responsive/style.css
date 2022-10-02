@@ -43,6 +43,7 @@ nav.navbar > .navitem {
     border-radius: 8px;
     color:#000000;
     background-color: #e4e4e4;
+    cursor: pointer;
 }
 
 nav.navbar > .navitem:hover {
@@ -70,6 +71,7 @@ nav.navbar .menu {
     color:#000000;
     background-color: #e4e4e4;
     visibility: hidden;
+    cursor: pointer;
 }
 
 nav.navbar .menu > i {
