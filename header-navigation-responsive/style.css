@@ -1,12 +1,18 @@
+:root {
+    --navbar-height: 100px;
+}
 * {
     scroll-behavior: smooth;
     padding: 0;
     margin: 0;
 }
 
+body {
+    padding-top: var(--navbar-height);
+}
+
 div.content {
     padding: 1px 16px;
-    height: 1000px;
 }
 
 section {
@@ -23,6 +29,9 @@ section > p {
 }
 
 nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     background-color: #3e3e3e;
     padding: 2px 0;
