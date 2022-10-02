@@ -61,4 +61,12 @@ nav.navbar > .navitem > a {
 nav.navbar > .navitem > a:hover {
     color: inherit;
 }
+
+nav.navbar .menu {
+    margin-left: auto;
+    /* display: none; */
+}
+
+nav.navbar .menu > i {
+    vertical-align: middle;
 }
