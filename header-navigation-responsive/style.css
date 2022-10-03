@@ -64,12 +64,11 @@ nav.navbar > .navitem > a:hover {
 }
 
 nav.navbar .menu {    
-    margin: 5px;
-    margin-left: auto;
-    padding: 10px;
-    border-radius: 8px;
-    color:#000000;
-    background-color: #e4e4e4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-top: 12px;
+    padding-right: 12px;
     visibility: hidden;
     cursor: pointer;
 }
@@ -79,10 +78,17 @@ nav.navbar .menu > i {
 }
 
 @media screen and (max-width: 600px) {
+    nav.navbar {
+        display: grid;
+    }
+
     nav.navbar > .navitem {
         display: none;
+        margin: 0;
+        border-radius: 0;
     }
+    
     nav.navbar > .menu {
         visibility: visible;
     }
-  }
+}
