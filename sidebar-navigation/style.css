@@ -1,0 +1,62 @@
+:root {
+    --sidebar-width: 150px
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    min-height: 60vh;
+    border: 1px solid #000000;
+    padding: 30px
+}
+
+section > p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify; /* Blocksatz */
+}
+
+.sidebar {
+    width: var(--sidebar-width);
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto; /* Adds scrollbars when necessary */
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: var(--sidebar-width);
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+        display: none;
+    }
+    div.content {
+        margin-left: 0px;
+    }
+}
+

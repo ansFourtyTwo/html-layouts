@@ -1,0 +1,92 @@
+:root {
+    --navbar-height: 50px;
+}
+* {
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding-top: var(--navbar-height);
+}
+
+div.content {
+    padding: 1px 16px;
+}
+
+article {
+    min-height: 60vh;
+    border: 1px solid #000000;
+    padding: 30px
+}
+
+article > p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: justify; /* Blocksatz */
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    display: flex;
+    align-items: center;
+    background-color: #3e3e3e;
+}
+
+nav.navbar > .navitem {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    color:#000000;
+    background-color: #e4e4e4;
+    cursor: pointer;
+}
+
+nav.navbar > .navitem:hover {
+    color: #ffffff;
+    background-color: #575656;
+}
+
+nav.navbar > .menu {    
+    display: table;
+    height: 2.3rem;
+    width: 2.3rem;
+    position: fixed;
+    right: 3px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+nav.navbar > .menu > i {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0.5em;
+}
+
+@media screen and (max-width: 600px) {
+    nav.navbar {
+        display: grid;
+    }
+
+    nav.navbar > .navitem {
+        display: none;
+        margin: 0;
+        border-radius: 0;
+    }
+    
+    nav.navbar > .menu {
+        visibility: visible;
+    }
+}
