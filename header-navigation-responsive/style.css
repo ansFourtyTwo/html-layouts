@@ -34,6 +34,7 @@ nav.navbar {
     width: 100%;
     height: var(--navbar-height);
     display: flex;
+    align-items: center;
     background-color: #3e3e3e;
 }
 
@@ -44,7 +45,7 @@ nav.navbar > .navitem {
     text-transform: uppercase;
     margin: 5px;
     padding: 10px;
-    border-radius: 2px;
+    border-radius: 5px;
     color:#000000;
     background-color: #e4e4e4;
     cursor: pointer;
@@ -56,17 +57,22 @@ nav.navbar > .navitem:hover {
 }
 
 nav.navbar > .menu {    
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding-top: 12px;
-    padding-right: 12px;
+    display: table;
+    height: 2.3rem;
+    width: 2.3rem;
+    position: fixed;
+    right: 3px;
+    border-radius: 50%;
+    background-color: #d3d3d3;
     visibility: hidden;
     cursor: pointer;
 }
 
 nav.navbar > .menu > i {
+    display: table-cell;
     vertical-align: middle;
+    text-align: center;
+    padding: 0.5em;
 }
 
 @media screen and (max-width: 600px) {
