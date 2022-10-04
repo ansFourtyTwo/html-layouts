@@ -15,13 +15,13 @@ div.content {
     padding: 1px 16px;
 }
 
-section {
+article {
     min-height: 60vh;
     border: 1px solid #000000;
     padding: 30px
 }
 
-section > p {
+article > p {
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     line-height: 32px;
