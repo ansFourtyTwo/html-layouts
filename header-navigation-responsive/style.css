@@ -38,9 +38,13 @@ nav.navbar {
 }
 
 nav.navbar > .navitem {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    text-transform: uppercase;
     margin: 5px;
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 2px;
     color:#000000;
     background-color: #e4e4e4;
     cursor: pointer;
@@ -51,19 +55,7 @@ nav.navbar > .navitem:hover {
     background-color: #575656;
 }
 
-nav.navbar > .navitem > a {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.2em;
-    color: inherit;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-nav.navbar > .navitem > a:hover {
-    color: inherit;
-}
-
-nav.navbar .menu {    
+nav.navbar > .menu {    
     position: absolute;
     top: 0;
     right: 0;
@@ -73,7 +65,7 @@ nav.navbar .menu {
     cursor: pointer;
 }
 
-nav.navbar .menu > i {
+nav.navbar > .menu > i {
     vertical-align: middle;
 }
 
